@@ -4,8 +4,8 @@ class Conexion{
   private $db = "farmacia_sistema";
   private $puerto = 3306;
   private $charset="utf8";
-  private $usuario="root";
-  private $contraseña="";
+  private $usuario="abi";
+  private $contraseña="AbiDev2023&";
   public $pdo = null;
   private $atributos=[
     PDO::ATTR_CASE=>PDO::CASE_LOWER,

@@ -10,9 +10,9 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="../css/adminlte.min.css">
   <!-- SweetAlert2 -->
-  <link rel="stylesheet" href="/farmacia/css/sweetalert2.css">
+  <link rel="stylesheet" href="../css/sweetalert2.css">
   <!-- Style -->
-  <link rel="stylesheet" href="http://localhost:8022/farmacia/css/recuperar.css">
+  <link rel="stylesheet" href="../css/recuperar.css">
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">

@@ -5,11 +5,11 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../css/animate.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="/farmacia/Util/css/css/all.min.css">
+  <link rel="stylesheet" href="../Util/css/css/all.min.css">
   <!-- SweetAlert2 -->
-  <link rel="stylesheet" href="/farmacia/css/sweetalert2.css">
+  <link rel="stylesheet" href="../css/sweetalert2.css">
   <!-- Select2 -->
-  <link rel="stylesheet" href="/farmacia/css/select2.css">
+  <link rel="stylesheet" href="../css/select2.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../css/adminlte.min.css">
   <!-- style -->
@@ -78,7 +78,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background: var(--nav-color)">
     <!-- Brand Logo -->
-    <a href="/farmacia/vista/home.php" class="brand-link" style="background: var(--nav-color)">
+    <a href="/vista/home.php" class="brand-link" style="background: var(--nav-color)">
       <img src="../img/icon-dark.png" alt="Farmacia EBEN-EZER" class="brand-image elevation" style="opacity: .8">
       <img src="../img/slogan.png" class=" img-light ml-5" id="img-slogan" style="width: 65px">
     </a>

@@ -39,7 +39,7 @@ else{
             <input type="password" name="pass" required="" id="password">
             <label>Contraseña</label>
           </div>
-          <a class="recuperar" href="http://localhost:8022/farmacia/vista/recuperar.php">Recuperar Contraseña</a>
+          <a class="recuperar" href="/vista/recuperar.php">Recuperar Contraseña</a>
           <button class="intro">
             <span></span>
             <span></span>

@@ -1,0 +1,161 @@
+:root{
+  --bg-color: #18191A;
+  --text-color: #fdfdfd;
+  --text-color2: #03E9F4;
+  --dark-color1: #242526;
+  --dark-color2: #3A3B3C;
+  --dark-color3: #202020;
+  --nav-color: #161616;
+  --icon-color1: #00FFFF;
+  --icon-color2: #0eacaf;
+  --icon-color3: #ED1E79;
+  --icon-color4: #F6BF3F;
+}
+.dark-mode-color{
+  --bg-color: #fdfdfd;
+  --text-color: #101010;
+  --text-color2: #0a97b0;
+  --dark-color1: #F0F2F5;
+  --dark-color2: #D8DADF;
+  --dark-color3: #fdfdfd;
+  --nav-color: #F0F2F5;
+  --icon-color1: #0eacaf;
+  --icon-color2: #0a6ca1;
+  --icon-color3: #c10c5b;
+  --icon-color4: #e5a612;
+}
+.content-wrapper{
+  background: var(--bg-color);
+}
+.wrapper{
+  background: var(--bg-color);
+}
+.bienvenida{
+  display: block;
+}
+.contenedor_bien{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo_farma{
+  width: 75%;
+  height: 75%;
+}
+.logo_farma .image_logo{
+  width: 100%;
+  animation-name: lat;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+@keyframes lat {
+  0%{
+    transform: scale(.9);
+  }
+  50%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(.9);
+  }
+}
+.image_logo2{
+  display: none;
+}
+.card-body-bien{
+  width: 95%;
+	margin: auto;
+	padding: 40px 0;
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+}
+.vision h2,
+.mision h2{
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  color: var(--text-color);
+}
+.vision,
+.mision{
+  background: var(--dark-color1);
+  border-radius: 12px;
+  padding: 1rem;
+}
+h1,
+p{
+  color: var(--text-color);
+}
+/*////////////////////////////////////////////////////*/
+.card-header{
+  background-color: var(--dark-color1);
+  color: var(--text-color);
+}
+.card-body{
+  background-color: var(--dark-color1);
+  color: var(--text-color);
+}
+.card-footer{
+  background: var(--dark-color1);
+}
+.form-control{
+  background: var(--dark-color2);
+  border: .5px solid var(--dark-color2);
+  color: var(--text-color);
+}
+.form-control:focus{
+  background: var(--dark-color2);
+  border: .1px solid var(--dark-color2);
+  color: var(--text-color);
+}
+.table_nav{
+  background: var(--dark-color1);
+  color: var(--text-color);
+  border: 0;
+}
+.list-group-item{
+  background: var(--dark-color1);
+}
+@media(max-width: 700px) {
+  .logo_farma{
+    width: 90%;
+    height: 90%;
+  }
+  .card-body-bien{
+    grid-template-columns: 1fr;
+  }
+  p{
+  text-align: center;
+  }
+}
+@media(max-width: 450px) {
+  .image_logo{
+    display: none;
+  }
+  .logo_farma .image_logo2{
+    display: block;
+    width: 100%;
+  }
+}
+/*////////////////////////////////////////////////////////////*/
+#dark_mode{
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--text-color);
+  cursor: pointer;
+  margin-right: 2rem;
+}
+/*////////////////////////////////////////////////////////////*/
+nav p,
+nav ul .nav-header{
+  color: var(--text-color) !important;
+}
+/*////////////////////////////////////////////////////////////*/
+.modal-header{
+  background: var(--dark-color1);
+}
+.modal-body{
+  background: var(--dark-color1);
+}

@@ -1,0 +1,9 @@
+.cont_logo_form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: .5rem;
+}
+.logo_form{
+  width: 7rem;
+}

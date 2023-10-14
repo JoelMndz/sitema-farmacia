@@ -1,0 +1,251 @@
+.titulo_cp {
+  border-top: 1px solid  #00438a;
+  border-bottom: 1px solid #00438a;
+  color: var(--text-color);
+  font-size: 2.4em;
+  line-height: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 0 20px 0;
+  background: var(--dark-color1)
+}
+
+.logo_cp {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left:30px ;
+  margin-right: 40px;
+}
+
+.logo_cp img {
+  width: 100px;
+  height: 100px;
+}
+.nombre_farmacia {
+  font-size: 18px;
+  color: #007BFF;
+}
+.datos_cp {
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-left: 40px;
+}
+.datos_cp span {
+  color: var(--text-color);
+  font-size: 20px;
+  margin-right: 2rem;
+}
+.datos_cp h3 {
+  color: var(--text-color);
+}
+.correo {
+  color: rgb(58, 77, 138);
+  text-decoration: underline;
+}
+/*TABLA DE compra*/
+.compra * {
+  position: relative;
+}
+
+/*encabezado morado*/
+.compra thead tr {
+  font-size: 80%;
+  text-align: center;
+  height: 60px;
+  background: var(--nav-color);
+}
+
+
+/*encabezado producto blancas*/
+.compra th{
+  font-size: auto;
+  color: var(--text-color);
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+/*resalto de cada fila*/
+.compra tbody tr:nth-child(even) {
+  background-color: var(--dark-color1);
+}
+
+.compra tbody tr td {
+  font-size: 80%;
+}
+.compra tbody tr td::before {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.card-body .card{
+  background: var(--dark-color1);
+  color: var(--text-color);
+}
+.info-box{
+  background: var(--dark-color3);
+}
+.info-box .info-box-icon{
+  font-size: 1.5rem !important;
+}
+.select2-container--default .select2-selection--single{
+  background-color: var(--dark-color3) !important;
+  border-color: var(--dark-color2);
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: var(--text-color);
+}
+.btn-default {
+  background-color: var(--bg-color);
+  border-color: var(--dark-color1);
+  color: var(--text-color);
+}
+.select2-search{
+  background-color: var(--dark-color1);
+}
+.select2-container--default .select2-dropdown 
+.select2-search__field, .select2-container--default .select2-search--inline .select2-search__field,
+.select2-results__option[aria-selected] {
+  background-color: var(--dark-color3) !important;
+  border-color: var(--dark-color2);
+  color: var(--text-color);
+}
+.select2-container--default .select2-dropdown 
+.select2-search__field, .select2-container--default .select2-search--inline .select2-search__field,
+.select2-results__option[aria-selected]:hover {
+  background-color: var(--dark-color1) !important;
+  border-color: var(--dark-color2);
+}
+.select2-container--default .select2-dropdown {
+  border: 1px solid var(--dark-color2);
+}
+/*////////////////////////////////////////////////////////////////////////////////////*/
+.small, small{
+  font-size: 95%;
+}
+/*////////////////////////////////////////////////////////////////////////////////////*/
+
+@media screen and (max-width: 900px) {
+  .datos_cp input{
+    margin-left: 10px;
+  }
+  .datos_cp span {
+    float: left;
+    margin-left: 15px;
+    text-align: left;
+  }
+  .compra {
+    display: block;
+  }
+  .compra > *, .compra tr, .compra td, .compra th {
+    display: block;
+  }
+  .compra thead {
+    display: none;
+    color: #325684;
+  }
+  .compra tbody tr {
+    height: auto;
+    padding: 37px 0;
+  }
+  .compra tbody tr td {
+    padding-left: 50% !important;
+    margin-bottom: -10px;
+  }
+  .compra tbody tr td:last-child {
+    margin-bottom: 0;
+  }
+  .compra tbody tr td:before {
+
+    font-size: 14px;
+    color: #999999;
+    line-height: 1.2;
+    font-weight: unset;
+    position: absolute;
+    width: 10px;
+    left: 10px;
+  }
+  .compra tbody tr td:nth-child(1):before {
+    content: "Nombre";
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+  }
+  .compra tbody tr td:nth-child(2):before {
+    content: "Stock";
+    font-weight: bold;
+    font-size: 15px;
+    color: #000;
+  }
+  .compra tbody tr td:nth-child(3):before {
+    content: "Precio";
+    font-weight: bold;
+    font-size: 15px;
+    color: #000;
+  }
+  .compra tbody tr td:nth-child(4):before {
+    content: "Concentracion";
+    font-weight: bold;
+    font-size: 15px;
+    color: #000;
+  }
+  .compra tbody tr td:nth-child(5):before {
+    content: "Adicional";
+    font-weight: bold;
+    font-size: 15px;
+    color: #000;
+  }
+  .compra tbody tr td:nth-child(6):before {
+    content: "Laboratorio";
+    font-weight: bold;
+    font-size: 15px;
+    color: #000;
+  }
+  .compra tbody tr td:nth-child(7):before {
+    content: "Presentacion";
+    font-weight: bold;
+    font-size: 15px;
+    color: #000;
+  }
+  .compra tbody tr td:nth-child(8):before {
+    content: "Cantidad";
+    font-weight: bold;
+    font-size: 15px;
+    color: #000;
+  }
+  .compra tbody tr td:nth-child(9):before {
+    content: "Subtotal";
+    font-weight: bold;
+    font-size: 15px;
+    color: #000;
+  }
+  .compra tbody tr td:nth-child(10):before {
+    content: "Eliminar";
+    font-weight: bold;
+    font-size: 15px;
+    color: #000;
+  }
+  .compra tbody tr td:nth-child(11):before {
+    content: "Totales";
+    font-weight: bold;
+    font-size: 15px;
+    color: #000;
+  }
+  
+
+  .compra tbody tr {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .compra {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .datos_cp {
+    margin-left: 10px;
+  }
+  .datos_cp span {
+    font-size: 18px;
+    margin-right: .5rem;
+  }
+}

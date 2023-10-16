@@ -238,8 +238,11 @@ if($_POST['funcion']=='reporte_productos'){
       </tbody>
     </table>
   ';
+  // Ruta completa a la carpeta pdf en tu proyecto
+  $pdfDirectory = '../pdf';
   $css = file_get_contents("../css/pdf.css");
-  $mpdf = new \Mpdf\Mpdf();
+  // Configuración de mPDF para usar la carpeta pdf como directorio temporal
+  $mpdf = new \Mpdf\Mpdf(['tempDir' => $pdfDirectory]);
   $mpdf->WriteHTML($css, \Mpdf\HTMLParserMode::HEADER_CSS);
   $mpdf->WriteHTML($html, \Mpdf\HTMLParserMode::HTML_BODY);
   $mpdf->Output("../pdf/pdf-" . $_POST['funcion'] . ".pdf", \Mpdf\Output\Destination::FILE);
